@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_sales_product_definitions",
+  "info": {
+    "name": "productDefinition",
+    "icon": "asterisk",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Price": {
+      "type": "decimal"
+    },
+    "product": {
+      "model": "product"
+    }
+  }
+}

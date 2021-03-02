@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/celebrities",
+      "handler": "celebrity.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/celebrities/count",
+      "handler": "celebrity.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/celebrities/:id",
+      "handler": "celebrity.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/celebrities",
+      "handler": "celebrity.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/celebrities/:id",
+      "handler": "celebrity.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/celebrities/:id",
+      "handler": "celebrity.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

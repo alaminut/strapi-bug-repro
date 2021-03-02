@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "name": "Category",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Children": {
+      "collection": "category",
+      "via": "Parent"
+    },
+    "Parent": {
+      "model": "category",
+      "via": "Children"
+    }
+  }
+}

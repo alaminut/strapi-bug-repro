@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "product"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "systemName": {
+      "type": "string"
+    },
+    "name": {
+      "type": "component",
+      "repeatable": true,
+      "component": "localization.localized-text"
+    },
+    "description": {
+      "type": "component",
+      "repeatable": true,
+      "component": "localization.localized-text"
+    }
+  }
+}

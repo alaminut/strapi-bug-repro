@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "celebrities",
+  "info": {
+    "name": "celebrity"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Fullname": {
+      "type": "string"
+    },
+    "publicTitle": {
+      "type": "component",
+      "repeatable": true,
+      "component": "localization.localized-text"
+    },
+    "products": {
+      "type": "dynamiczone",
+      "components": [
+        "sales.product-definition"
+      ]
+    }
+  }
+}
